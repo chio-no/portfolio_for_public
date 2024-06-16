@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content="CHIHIRO OTOMO's page">
+  <meta property='og:url' content='http://www.isc.meiji.ac.jp/~ev200557/WORKS/webp.html'>
+  <meta property='og:description' content='CHIHIO OTOMOのやったことまとめ'>
+  <meta property="og:image" content="../img/ogp.png">
+  <meta name="description" content="CHIHIRO OTOMOのやったことまとめ" />
+  <title>CHIHIRO OTOMO's Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="../css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <link rel=”canonical” href=”http://www.isc.meiji.ac.jp/~ev200557/WORKS/webp.html” />
+  <link rel="stylesheet/less" type="text/css" href="../css/style.less">
+  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="../index.html">CHIHIRO OTOMO</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="../#works">WORKS</a></li>
+            <li class="gnav-item"><a href="../#skill">AREA&SKILL</a></li>
+            <li class="gnav-item"><a href="../#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="../#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">ノードとスライダの画像生成＆編集システム</h2>
+          <div class="article-body">
+            <p>
+              <iframe src="https://www.youtube.com/embed/O1Z_dSBIE2s?si=LnscdKfZOjkIFXPQ" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            </p>
+            <h3>概要</h3>
+            <p>
+              Text-to-Image モデルでの画像生成では，ユーザはテキストのみで生成したい画像を指示する．生 成された画像の中には，細部の編集により表現を追い込みたいものがある．だが，これまでに提案されてき た画像生成のための編集手法では，表現を追い込む際に必要なインタフェースはあまり提供されていない． また，ノード内のパラメータを調整することで画像を生成するビジュアルプログラミングのようなシステム が多く開発されているが，生成した画像を編集できるものは少ない．本稿の目的は画像の生成と編集が一体 化したシステムによって，ユーザ自らが求める表現を追求できるようにすることである．そこで，本稿では テキストボックスとスライダからなるノードの組み合わせでプロンプトを構築し，テキスト変更やスライダ 調整によって画像の生成と編集を行う画像生成システムを提案する．ユーザはテキストの操作で画像内オ ブジェクトの部分的な入れ替え，スライダの操作で特定のオブジェクトの影響力を微調整するといった「詰 める」作業が可能となる．提案システムでの「詰める」作業によって，ユーザが求める表現に到達できる．
+
+ 
+            </p>
+            <h3>論文（PDF）</h3>
+             <p><a href="https://www.wiss.org/WISS2023Proceedings/data/2-A08.pdf" target="_blank"
+                                rel="noopener">https://www.wiss.org/WISS2023Proceedings/data/2-A08.pdf(WISS2023)</a></p>
+             <p><a href="http://id.nii.ac.jp/1001/00233553/" target="_blank"
+                                  rel="noopener">http://id.nii.ac.jp/1001/00233553/(第71回EC研究会)</a></p>
+            <h3>発表</h3>
+            <p><a href="https://www.wiss.org/WISS2023/" target="_blank" rel="noopener">WISS2023</a>
+            </p>
+              <a href="https://entcomp.org/sig/?page_id=32" target="_blank" rel="noopener">第71回EC研究会</a>
+            
+            <h3>研究室DB（書誌情報など）</h3>
+            <p>
+              <a href="https://www.miyashita.com/researches/4LCktHs7SkqYMWeTiWGyQS" target="_blank"
+              rel="noopener">https://www.miyashita.com/researches/4LCktHs7SkqYMWeTiWGyQS(WISS2023)</a>
+            </p>
+            <a href="https://www.miyashita.com/researches/5iRDJVDR8vNr4LaA27UGGR" target="_blank"
+                            rel="noopener">https://www.miyashita.com/researches/5iRDJVDR8vNr4LaA27UGGR(第71回EC研究会)</a>
+                      
+            <h3>実装</h3>
+            <strong>概要</strong>
+            <img src="../img/GANE/system_overview_ja.png">
+            <p>
+              ノードでプロンプトを構築していき、各ノードをいじることで画像の生成と編集が行えるノードベースシステム。Python3.10で実装。
+            </p>
+            <strong>画像生成時の仕組み</strong>
+            <img src="../img/GANE/system_how2_ja.png">
+            <p>ノードを一定のグループで管理し、うまいことその関係性をプロンプトに落とし込んでいます。画像の生成はStable Diffusionにお任せ。
+            </p>
+          
+            <h3>コメント</h3>
+            <p>
+              ほとんどComfyUIみたいな実装になっていますがあしからず（少なくともキーロガーは仕込んでないです）作例の画像が楽しいのでぜひ本文をご覧ください！（第71回EC研究会の方をお勧めします）
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="../#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;CHIHIRO OTOMO</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="../js/script.js"></script>
+</body>
+
+</html>

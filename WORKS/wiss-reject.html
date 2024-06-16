@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content="CHIHIRO OTOMO's page">
+    <meta property='og:url' content='http://www.isc.meiji.ac.jp/~ev200557/WORKS/wiss-reject.html'>
+    <meta property='og:description' content='CHIHIO OTOMOのやったことまとめ'>
+    <meta property="og:image" content="../img/ogp.png">
+    <meta name="description" content="CHIHIRO OTOMOのやったことまとめ" />
+    <title>CHIHIRO OTOMO's Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="../css/ress.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel=”canonical” href=”http://www.isc.meiji.ac.jp/~ev200557/WORKS/wiss-reject.html” />
+    <link rel="stylesheet/less" type="text/css" href="../css/style.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header ">
+            <div class="container">
+                <h1 class="header-logo">
+                    <a href="../index.html">CHIHIRO OTOMO</a>
+                </h1>
+                <nav class="gnav">
+                    <ul class="gnav-list">
+                        <li class="gnav-item"><a href="../#works">WORKS</a></li>
+                        <li class="gnav-item"><a href="../#skill">AREA&SKILL</a></li>
+                        <li class="gnav-item"><a href="../#about">ABOUT</a></li>
+                        <li class="gnav-item"><a href="../#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <main class="content">
+
+            <article class="article">
+                <div class="article-container">
+                    <h2 class="article-title">AIが生成する不採択コメントを用いた研究指導</h2>
+                    <div class="article-body">
+                        <p>
+                            <img src="../img/wiss_reject/wiss_reject_about.png">
+                        </p>
+                        <h3>概要</h3>
+                        <p>
+                            本稿では，AI の文章生成言語モデルによって論文の概要から「不採択コメント」を生成し，それに学生と教員が一緒に向き合うことによる研究指導を提案する．実装したシステムは Slack
+                            Bot であり，文末に「なーんてな」といった言葉を追加することによって表現の威圧感を緩和して，実際に学生が読んだときの精神的なダメージを低減する．動作テストでは，10
+                            の不採択コメントで役に立っ たと思える点があるものは７つで，中には新しいアイデアまで提供するものがあった．これを実際に 当研究室での研究指導に活用する計画である．
+                        </p>
+                        <h3>論文（PDF）</h3>
+                        <p><a href="https://www.wiss.org/WISS2022Proceedings/data/T09.pdf" target="_blank"
+                                rel="noopener">https://www.wiss.org/WISS2022Proceedings/data/T09.pdf</a></p>
+                        <h3>発表</h3>
+                        <a href="https://www.wiss.org/WISS2022/" target="_blank" rel="noopener">WISS
+                            2022:第30回インタラクティブシステムとソフトウェアに関するワークショップ</a>
+                        <h3>研究室DB（書誌情報など）</h3>
+                        <a href="https://www.miyashita.com/researches/2UPIIrRYNp2v1q9dF0TGju" target="_blank"
+                            rel="noopener">https://www.miyashita.com/researches/2UPIIrRYNp2v1q9dF0TGju</a>
+                        <h3>実装</h3>
+                        <p>python3.8でSlack Botを作成<br>
+                            ※GPT-3のパラメータは論文からご確認いただけます
+                        </p>
+                        <img src="../img/wiss_question/systemgaiyou.png">
+                        <h3>動作例</h3>
+                        <img src="../img/wiss_reject/wiss_reject_demo.png">
+                        <p>※使用しているテキストは論文執筆時点での草案です</p>
+                        <h3>コメント</h3>
+                        <p>
+                            学会初参加の学部生のテーマらしくないなと思います。（可愛げがない）<br>
+                        </p>
+                    </div>
+                    <div class="home-link">
+                        <a href="../#works">Works一覧へ</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="page-top" id="js-page-top">
+                <span class="material-icons-outlined">expand_less</span>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="copyright">&copy;CHIHIRO OTOMO</div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="../js/script.js"></script>
+</body>
+
+</html>

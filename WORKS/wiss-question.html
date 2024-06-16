@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content="CHIHIRO OTOMO's page">
+  <meta property='og:url' content='http://www.isc.meiji.ac.jp/~ev200557/WORKS/wiss-question.html'>
+  <meta property='og:description' content='CHIHIO OTOMOのやったことまとめ'>
+  <meta property="og:image" content="../img/ogp.png">
+  <meta name="description" content="CHIHIRO OTOMOのやったことまとめ" />
+  <title>CHIHIRO OTOMO's Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="../css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <link rel=”canonical” href=”http://www.isc.meiji.ac.jp/~ev200557/WORKS/wiss-question.html” />
+  <link rel="stylesheet/less" type="text/css" href="../css/style.less">
+  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="../index.html">CHIHIRO OTOMO</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="../#works">WORKS</a></li>
+            <li class="gnav-item"><a href="../#skill">AREA&SKILL</a></li>
+            <li class="gnav-item"><a href="../#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="../#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">研究概要に基づいて質問を生成するAIシステム</h2>
+          <div class="article-body">
+            <p>
+              <iframe src="https://www.youtube.com/embed/K4M-SfHvuIo" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </p>
+            <h3>概要</h3>
+            <p>
+              本稿では,論文概要を基に言語モデルが生成した質問を提示する AI
+              システムを提案する.学会や研究グループ内で研究発表するとき,事前準備として自ら考えた想定質問を用いることがある.想定質問を用いた発表準備には,予め研究グループの同期や指導教員から質問を集め,本番の質疑応答では想定した質問のみがなされるように期待する文化もある.このような文化では,想定外の質問がなされることがいわば失敗となる.本稿ではそうした集合知的なアプローチですら想定できない質問を集めることこそが発表の意義であると考えた.なぜなら,それこそが研究グループ内で得られない視点だからであり,研究を進めるためのヒントとなるからである.想定外の質問を集めるためには,想定質問に対する回答を全て発表内に含め,想定内の質問はそもそも質問されないようにすることが望ましい.そこで,本稿ではそうした質問を発表準備に活用することを目的とし,論文の概要を基にした質問を
+              AI に生成させるシステムを提案する.
+            </p>
+            <h3>論文（PDF）</h3>
+            <p><a href="https://www.wiss.org/WISS2022Proceedings/data/2-B05.pdf" target="_blank"
+                rel="noopener">https://www.wiss.org/WISS2022Proceedings/data/2-B05.pdf</a></p>
+            <h3>発表</h3>
+            <a href="https://www.wiss.org/WISS2022/" target="_blank" rel="noopener">WISS
+              2022:第30回インタラクティブシステムとソフトウェアに関するワークショップ</a>
+            <h3>研究室DB（書誌情報など）</h3>
+            <a href="https://www.miyashita.com/researches/393Ws6JhPoyCsM4LtyrRaE" target="_blank"
+              rel="noopener">https://www.miyashita.com/researches/393Ws6JhPoyCsM4LtyrRaE</a>
+            <h3>実装</h3>
+            <p>python3.8でSlack Botを作成<br>ソースコード: <a
+                href="https://github.com/chio-no/AI-QuestionGenerator-From-ResearchSummary.git" target="_blank"
+                rel="noopener">https://github.com/chio-no/AI-QuestionGenerator-From-ResearchSummary.git</a><br>
+              ※GPT-3のパラメータはソースコードからご確認いただけます
+            </p>
+            <img src="../img/wiss_question/systemgaiyou.png">
+            <h3>動作例</h3>
+            <img src="../img/wiss_question/input-gaiyou-ex.png">
+            <p>※使用しているテキストは論文執筆時点での草案です</p>
+            <h3>コメント</h3>
+            <p>
+              2022年の内に発表出来て良かった。</p>
+          </div>
+          <div class="home-link">
+            <a href="../#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;CHIHIRO OTOMO</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="../js/script.js"></script>
+</body>
+
+</html>

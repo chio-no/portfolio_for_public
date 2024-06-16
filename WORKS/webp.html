@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content="CHIHIRO OTOMO's page">
+  <meta property='og:url' content='http://www.isc.meiji.ac.jp/~ev200557/WORKS/webp.html'>
+  <meta property='og:description' content='CHIHIO OTOMOのやったことまとめ'>
+  <meta property="og:image" content="../img/ogp.png">
+  <meta name="description" content="CHIHIRO OTOMOのやったことまとめ" />
+  <title>CHIHIRO OTOMO's Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="../css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <link rel=”canonical” href=”http://www.isc.meiji.ac.jp/~ev200557/WORKS/webp.html” />
+  <link rel="stylesheet/less" type="text/css" href="../css/style.less">
+  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="../index.html">CHIHIRO OTOMO</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="../#works">WORKS</a></li>
+            <li class="gnav-item"><a href="../#skill">AREA&SKILL</a></li>
+            <li class="gnav-item"><a href="../#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="../#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">M.O.M ―Morse Outgoing Machine―</h2>
+          <div class="article-body">
+            <p>
+              <img src="../img/webp/thumb.png">
+              <!-- <video src="../img/movie/WebP_demo.mp4" controls></video> -->
+            </p>
+            <h3>概要</h3>
+            <p>
+              大学の講義である「ウェブプログラミング実習」の最終課題として制作したモールス信号システム。ウェブページで入力した任意の文字列がモールス信号に変換され、obnizがLEDを制御することでモールス信号を実世界に発信する。
+            </p>
+            <h3>実装</h3>
+            <strong>概要</strong>
+            <img src="../img/webp/system.png">
+            <p>クライアントサイドとサーバサイドに分かれており、サーバサイドはPHP、クライアントサイドはHTML/CSS、JavaScriptにて実装。DB　にはSQLiteを使用。
+            </p>
+            <strong>サーバサイド</strong></br>
+            <img src="../img/webp/db_ER.png">
+            <p>ユーザが入力した文字列をモールス信号に変換する。PHPによってユーザのログイン管理、DBへのアクセスを行っている。</p>
+            <strong>クライアントサイド</strong>
+            <img src="../img/webp/client.png">
+            <p>入力した文字列をサーバサイドに送信する。DBに自分がよく使う単語を登録しておくことも可能</p>
+            <h3>コメント</h3>
+            <p>
+              グループで制作したものです。自分の担当範囲はサーバサイド/クライアントサイドのプログラミング全般とDBの設計になります。
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="../#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;CHIHIRO OTOMO</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="../js/script.js"></script>
+</body>
+
+</html>
